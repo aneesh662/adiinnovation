@@ -2,67 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coming Soon</title>
+    <title>AdiInnovation | Digital • Data • Finance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<section class="coming-soon d-flex align-items-center">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <span class="brand">AdiInnovation</span>
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+               <!-- <li class="nav-item">
+                    <a class="nav-link btn btn-success text-white px-3" href="#whatsapp">
+                        WhatsApp
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero d-flex align-items-center">
     <div class="container text-center text-white">
-        <h1 class="display-4 fw-bold fade-in">🚀 Coming Soon</h1>
-        <p class="lead fade-in-delay">
-            We are working hard to launch our new website
+        <h1 class="display-5 fw-bold">Digital • Data • Finance Solutions</h1>
+        <p class="lead mt-3">
+            Smart technology & analytics to grow your business
+        </p>
+        <a href="#services" class="btn btn-warning btn-lg mt-3">Explore Services</a>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Our Services</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <i class="bi bi-laptop fs-1"></i>
+                    <h5 class="mt-3">Digital Solutions</h5>
+                    <p>Web apps, automation, cloud deployment, domain and email</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <i class="bi bi-bar-chart fs-1"></i>
+                    <h5 class="mt-3">Data Analytics</h5>
+                    <p>Power BI, Python analytics, dashboards</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <i class="bi bi-currency-exchange fs-1"></i>
+                    <h5 class="mt-3">Finance & Accounting</h5>
+                    <p>MIS, VAT, accounting systems</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <h2 class="fw-bold">About AdiInnovation</h2>
+                <p>
+                    AdiInnovation provides Digital Transformation, Data Analytics,
+                    and Financial Intelligence solutions for modern businesses.
+                </p>
+                <p>
+                    We combine accounting expertise with technology to deliver
+                    scalable, real-world solutions.
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe"
+                     class="img-fluid rounded shadow">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Portfolio</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Finance Dashboards</h5>
+                    <p>Power BI – P&L, KPIs, Forecasts</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Web Applications</h5>
+                    <p>Flask, Bootstrap, SQLite systems</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Automation Tools</h5>
+                    <p>Python, Excel, API automation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- POWER BI SECTION -->
+<section id="powerbi" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Power BI Dashboard</h2>
+        <p class="text-center mb-4">
+            Real-time insights, KPIs, and financial analytics
         </p>
 
-        <!-- Countdown -->
-        <div class="row justify-content-center my-4 fade-in-delay">
-            <div class="col-3 col-md-2 time-box">
-                <h2 id="days">00</h2>
-                <span>Days</span>
+        <div class="ratio ratio-16x9 shadow rounded">
+            <iframe
+                title="FMCG Dashboard"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNTM0YjEzODctZWViNy00MzU0LWEzYzctMTAyZDI1MGRjNDY0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
+                frameborder="0"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Contact -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Contact Us</h2>
+        <p class="mb-4">
+            Reach us for Digital, Data & Finance solutions
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+                <div class="contact-box p-4 rounded">
+                    <i class="bi bi-telephone fs-1 text-warning"></i>
+                    <h5 class="mt-3">Phone</h5>
+                    <p class="mb-0">
+                        <a href="tel:+971555482885" class="text-white text-decoration-none">
+                            +91 858 990 0277
+                        </a>
+                    </p>
+                </div>
             </div>
-            <div class="col-3 col-md-2 time-box">
-                <h2 id="hours">00</h2>
-                <span>Hours</span>
-            </div>
-            <div class="col-3 col-md-2 time-box">
-                <h2 id="minutes">00</h2>
-                <span>Minutes</span>
-            </div>
-            <div class="col-3 col-md-2 time-box">
-                <h2 id="seconds">00</h2>
-                <span>Seconds</span>
+
+            <div class="col-md-4 mb-3">
+                <div class="contact-box p-4 rounded">
+                    <i class="bi bi-envelope fs-1 text-warning"></i>
+                    <h5 class="mt-3">Email</h5>
+                    <p class="mb-0">
+                        <a href="mailto:kodiyattilaneesh@gmail.com"
+                           class="text-white text-decoration-none">
+                            kodiyattilaneesh@gmail.com
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <!-- Email Notify -->
-        <div class="row justify-content-center fade-in-delay">
-            <div class="col-md-6">
-                <form class="d-flex">
-                    <input type="email" class="form-control me-2" placeholder="Enter your email" required>
-                    <button class="btn btn-warning">Notify Me</button>
-                </form>
-            </div>
-        </div>
-
-        <p class="mt-4 small text-light fade-in-delay">
-            © 2025 | All Rights Reserved
+        <p class="mt-4 small text-muted">
+            Available: Sun–Thu | 9:00 AM – 6:00 PM (UAE)
         </p>
     </div>
 </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Custom JS -->
-<script src="script.js"></script>
+<!-- Footer -->
+<footer class="text-center py-3 bg-black text-white">
+    © 2025 AdiInnovation | Digital • Data • Finance
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/918589900277"
+   target="_blank"
+   class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
