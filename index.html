@@ -13,110 +13,111 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <!-- Whatsapp -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            <span class="brand">AdiInnovation</span>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home">
+            <img src="images/logo.png" alt="AdiInnovation Logo" class="navbar-logo">
         </a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <!-- Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="menu" class="collapse navbar-collapse">
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
+
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-               <!-- <li class="nav-item">
-                    <a class="nav-link btn btn-success text-white px-3" href="#whatsapp">
-                        WhatsApp
-                    </a>
-                </li>-->
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <!-- Power BI Menu -->
+                <li class="nav-item">
+				<a class="nav-link" href="#powerbi">
+				<i class="bi bi-bar-chart-fill me-1"></i>
+        Dashboard
+    </a>
+</li>
+
+
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Hero -->
+<!-- ================= HERO ================= -->
 <section id="home" class="hero d-flex align-items-center">
     <div class="container text-center text-white">
         <h1 class="display-5 fw-bold">Digital • Data • Finance Solutions</h1>
-        <p class="lead mt-3">
-            Smart technology & analytics to grow your business
-        </p>
+        <p class="lead mt-3">Smart technology & analytics to grow your business</p>
         <a href="#services" class="btn btn-warning btn-lg mt-3">Explore Services</a>
     </div>
 </section>
 
-<!-- Services -->
+<!-- ================= SERVICES ================= -->
 <section id="services" class="py-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-5">Our Services</h2>
-        <div class="row g-4">
 
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="card service-card">
+                <div class="service-card">
                     <i class="bi bi-laptop fs-1"></i>
-                    <h5 class="mt-3">Digital Solutions</h5>
-                    <p>Web apps, automation, cloud deployment, domain and email</p>
+                    <h5>Digital Solutions</h5>
+                    <p>Web apps, automation, cloud deployment</p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card service-card">
+                <div class="service-card">
                     <i class="bi bi-bar-chart fs-1"></i>
-                    <h5 class="mt-3">Data Analytics</h5>
+                    <h5>Data Analytics</h5>
                     <p>Power BI, Python analytics, dashboards</p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card service-card">
+                <div class="service-card">
                     <i class="bi bi-currency-exchange fs-1"></i>
-                    <h5 class="mt-3">Finance & Accounting</h5>
+                    <h5>Finance & Accounting</h5>
                     <p>MIS, VAT, accounting systems</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- About -->
+<!-- ================= ABOUT ================= -->
 <section id="about" class="bg-light py-5">
     <div class="container">
         <div class="row align-items-center">
-
             <div class="col-md-6">
                 <h2 class="fw-bold">About AdiInnovation</h2>
-                <p>
-                    AdiInnovation provides Digital Transformation, Data Analytics,
-                    and Financial Intelligence solutions for modern businesses.
-                </p>
-                <p>
-                    We combine accounting expertise with technology to deliver
-                    scalable, real-world solutions.
-                </p>
-            </div>
+                <p>AdiInnovation provides Digital Transformation, Data Analytics, and Financial Intelligence solutions for modern businesses.<br>
 
+We combine accounting expertise with technology to deliver scalable, real-world solutions.</p>
+            </div>
             <div class="col-md-6 text-center">
                 <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe"
                      class="img-fluid rounded shadow">
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Portfolio -->
+<!-- ================= PORTFOLIO ================= -->
 <section id="portfolio" class="py-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-5">Portfolio</h2>
@@ -146,29 +147,20 @@
     </div>
 </section>
 
-<!-- POWER BI SECTION -->
+<!-- ================= POWER BI ================= -->
 <section id="powerbi" class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center fw-bold mb-4">Power BI Dashboard</h2>
-        <p class="text-center mb-4">
-            Real-time insights, KPIs, and financial analytics
-        </p>
+        <p class="text-center mb-4">Real-time KPIs & financial insights</p>
 
         <div class="ratio ratio-16x9 shadow rounded">
             <iframe
-                title="FMCG Dashboard"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTM0YjEzODctZWViNy00MzU0LWEzYzctMTAyZDI1MGRjNDY0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
-                frameborder="0"
-                allowfullscreen="true">
+                allowfullscreen>
             </iframe>
         </div>
     </div>
 </section>
-
-
-
-
-
 <!-- Contact -->
 <section id="contact" class="bg-dark text-white py-5">
     <div class="container text-center">
@@ -211,11 +203,13 @@
 </section>
 
 
-<!-- Footer -->
+
+
+
+<!-- ================= FOOTER ================= -->
 <footer class="text-center py-3 bg-black text-white">
     © 2025 AdiInnovation | Digital • Data • Finance
 </footer>
-
 <!-- Floating WhatsApp Button -->
 <a href="https://wa.me/918589900277"
    target="_blank"
@@ -227,3 +221,4 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+
