@@ -58,6 +58,11 @@ body {
     transform: translateY(-8px);
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+
 /* =========================
    FLOATING WHATSAPP BUTTON
 ========================= */
