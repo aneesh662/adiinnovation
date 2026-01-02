@@ -237,3 +237,26 @@ body {
 .social-icons-footer a:hover {
     color: #2f6fed;
 }
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .clients-logos img {
+        max-height: 32px;
+    }
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 90vh;
+    }
+    .navbar-logo {
+        height: 38px;
+    }
+}
