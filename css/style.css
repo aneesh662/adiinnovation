@@ -1,89 +1,51 @@
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
 }
 
-/* NAVBAR */
+/* LOGO */
 .navbar-logo {
-    height: 40px;
+    height: 42px;
 }
 
-.nav-link {
-    font-weight: 500;
-    color: #1f2b4d !important;
-}
-
-.nav-link:hover {
-    color: #2f6fed !important;
-}
-
-
-
-
-/* Navbar logo */
-.navbar-logo {
-    height: 38px;
-}
-
-/* Power BI icon */
+/* POWER BI ICON */
 .powerbi-icon {
     height: 18px;
-    width: auto;
 }
-
-/* Navbar links */
-.nav-link {
-    font-weight: 500;
-    color: #1f2b4d !important;
-}
-
-.nav-link:hover {
-    color: #2f6fed !important;
-}
-
 
 /* HERO */
 .hero-modern {
+    background: linear-gradient(135deg, #f8fbff, #ffffff);
     padding: 100px 0;
-    background: #ffffff;
 }
 
 .hero-title {
-    font-size: 3rem;
     font-weight: 700;
-    color: #1f2b4d;
+    font-size: 2.6rem;
 }
 
 .hero-title span {
-    color: #2f6fed;
+    color: #0d6efd;
 }
 
 .hero-subtitle {
-    color: #6b7280;
+    color: #555;
     font-size: 1.1rem;
-    max-width: 520px;
-}
-
-.hero-image {
-    max-width: 100%;
 }
 
 /* FEATURES */
 .features-section {
-    background: #f9fafb;
-    padding: 60px 0;
+    padding: 70px 0;
+    background: #f8f9fa;
 }
 
 .feature-card {
-    background: #ffffff;
-    border-radius: 16px;
+    background: #fff;
     padding: 30px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    transition: .3s;
 }
 
 .feature-card:hover {
@@ -91,172 +53,99 @@ body {
 }
 
 .feature-card i {
-    font-size: 2.5rem;
-    color: #2f6fed;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #0d6efd;
 }
 
-/* ================= ABOUT SECTION ================= */
+/* ABOUT */
 .about-section {
-    padding: 100px 0;
-    background: #ffffff;
+    padding: 80px 0;
 }
 
 .about-badge {
-    display: inline-block;
+    background: #e9f2ff;
+    color: #0d6efd;
     padding: 6px 14px;
-    background: rgba(47, 111, 237, 0.1);
-    color: #2f6fed;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 20px;
-}
-
-.about-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #1f2b4d;
+    border-radius: 50px;
+    font-size: .85rem;
 }
 
 .about-title span {
-    color: #2f6fed;
-}
-
-.about-text {
-    color: #6b7280;
-    font-size: 1rem;
-    line-height: 1.7;
+    color: #0d6efd;
 }
 
 .about-list {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
 }
 
 .about-list li {
-    margin-bottom: 10px;
-    font-size: 0.95rem;
-    color: #374151;
+    margin-bottom: 8px;
 }
 
 .about-list i {
-    color: #2f6fed;
-    margin-right: 8px;
+    color: #0d6efd;
 }
+
 
 .about-image {
     max-width: 90%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 
 /* SERVICES */
 .service-box {
-    text-align: center;
+    background: #fff;
     padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
 }
 
 .service-box i {
     font-size: 2rem;
-    color: #2f6fed;
-    margin-bottom: 15px;
+    color: #0d6efd;
 }
 
-/* WHATSAPP */
+/* SOCIAL */
+.social-section {
+    padding: 40px 0;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    color: #0d6efd;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25d366;
+    background: #25D366;
     color: #fff;
-    font-size: 26px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    font-size: 1.7rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    z-index: 1000;
 }
 
-
-
-/* ================= SOCIAL MEDIA ================= */
-.social-section {
-    padding: 40px 0;
-    background: #f9fafb;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-
-.social-icons a {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1f2b4d;
-    font-size: 1.25rem;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    background: #2f6fed;
-    color: #ffffff;
-    transform: translateY(-4px);
-}
-
-
-/* ================= ICON FOOTER ================= */
-
-
-
-.social-icons-footer {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.social-icons-footer a {
-    color: #ffffff;
-    font-size: 1.2rem;
-    transition: 0.3s;
-}
-
-.social-icons-footer a:hover {
-    color: #2f6fed;
-}
-
-
-
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-    .clients-logos img {
-        max-height: 32px;
-    }
-}
-
-
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        height: 90vh;
-    }
-    .navbar-logo {
-        height: 38px;
+    .hero-title {
+        font-size: 2rem;
     }
 }
