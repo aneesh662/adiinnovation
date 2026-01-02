@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    background: #CECECE;
+}
+
+.navbar-logo {
+    height: 45px;
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #fca311 !important;
+}
+.navbar .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+
+
+.navbar-toggler {
+    border-color: #000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(10,0,0,0.55), rgba(0,0,0,0.95)),
+        url("../images/landing.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Services */
+.service-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card i {
+    color: #fca311;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+/* =========================
+   FLOATING WHATSAPP BUTTON
+========================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    z-index: 999;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+.whatsapp-float:hover {
+    background: #1ebe5d;
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon fix */
+.whatsapp-float i {
+    line-height: 1;
+}
+
+
+/* Compact Contact Section */
+#contact {
+    background: linear-gradient(135deg, #0f0f0f, #161616);
+    padding: 1.2rem 0;   /* very small height */
+}
+
+/* Heading */
+#contact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.3px;
+}
+
+/* Subtitle */
+#contact p {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+    color: #bdbdbd;
+}
+
+/* Contact Card */
+.contact-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.8rem !important;
+}
+
+/* Remove hover lift to save space */
+.contact-box:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Icons */
+.contact-box i {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.2rem;
+    color: #f4b400;
+}
+
+/* Titles */
+.contact-box h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+/* Links */
+.contact-box a {
+    font-size: 0.8rem;
+}
+
+/* Availability text */
+#contact .small {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    color: #9a9a9a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #contact {
+        padding: 1rem 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+/* Portfolio */
+#portfolio .card {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ================= CLIENT LOGOS ================= */
+.clients-section {
+    padding: 2rem 0;
+    background: #f8f9fa;
+}
+
+.clients-logos img {
+    max-height: 40px;
+    width: auto;
+    opacity: 0.75;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.clients-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .clients-logos img {
+        max-height: 32px;
+    }
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 90vh;
+    }
+    .navbar-logo {
+        height: 38px;
+    }
+}
